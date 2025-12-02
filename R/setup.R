@@ -9,5 +9,5 @@
 #' @examples
 #' ignore_unused_imports()
 ignore_unused_imports <- function() {
-  purrr::negate()
+  purrr::negate
 }
