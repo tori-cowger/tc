@@ -12,3 +12,6 @@ Nothing
 \description{
 Ignore Unused Imports
 }
+\examples{
+ignore_unused_imports()
+}
