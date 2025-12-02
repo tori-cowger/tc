@@ -11,3 +11,5 @@ RoxygenNote: 7.3.3
 Imports: 
     purrr,
     utils
+URL: https://github.com/tori-cowger/tc
+BugReports: https://github.com/tori-cowger/tc/issues
