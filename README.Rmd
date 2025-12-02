@@ -27,6 +27,7 @@ You can install the development version of tc from [GitHub](https://github.com/)
 ``` r
 # install.packages("pak")
 pak::pak("tori-cowger/tc")
+devtools::install_github("tori-cowger/tc")
 ```
 
 ## Example
@@ -37,6 +38,7 @@ Example of using the `%ni%` function, which is the opposite of `%in%`
 library(tc)
 ## Function for excluding items from filtering/lists
 mtcars |> dplyr::filter(gear %ni% 1:4) |> dplyr::select(cyl, gear)
+
 ```
 
 

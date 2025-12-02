@@ -18,6 +18,7 @@ You can install the development version of tc from
 ``` r
 # install.packages("pak")
 pak::pak("tori-cowger/tc")
+devtools::install_github("tori-cowger/tc")
 ```
 
 ## Example
