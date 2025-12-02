@@ -36,7 +36,7 @@ Example of using the `%ni%` function, which is the opposite of `%in%`
 ```{r example}
 library(tc)
 ## Function for excluding items from filtering/lists
-cars |> dplyr::filter(speed %ni% 4:10)
+mtcars |> dplyr::filter(gear %ni% 1:4) |> dplyr::select(cyl, gear)
 ```
 
 
