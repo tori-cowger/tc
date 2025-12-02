@@ -7,7 +7,8 @@
 
 <!-- badges: end -->
 
-The goal of tc is to …
+the `tc` package includes frequently used essential functions for
+processing and formatting data.
 
 ## Installation
 
@@ -21,33 +22,52 @@ pak::pak("tori-cowger/tc")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Example of using the `%ni%` function, which is the opposite of `%in%`
 
 ``` r
 library(tc)
-## basic example code
+## Function for excluding items from filtering/lists
+cars |> dplyr::filter(speed %ni% 4:10)
+#>    speed dist
+#> 1     11   17
+#> 2     11   28
+#> 3     12   14
+#> 4     12   20
+#> 5     12   24
+#> 6     12   28
+#> 7     13   26
+#> 8     13   34
+#> 9     13   34
+#> 10    13   46
+#> 11    14   26
+#> 12    14   36
+#> 13    14   60
+#> 14    14   80
+#> 15    15   20
+#> 16    15   26
+#> 17    15   54
+#> 18    16   32
+#> 19    16   40
+#> 20    17   32
+#> 21    17   40
+#> 22    17   50
+#> 23    18   42
+#> 24    18   56
+#> 25    18   76
+#> 26    18   84
+#> 27    19   36
+#> 28    19   46
+#> 29    19   68
+#> 30    20   32
+#> 31    20   48
+#> 32    20   52
+#> 33    20   56
+#> 34    20   64
+#> 35    22   66
+#> 36    23   54
+#> 37    24   70
+#> 38    24   92
+#> 39    24   93
+#> 40    24  120
+#> 41    25   85
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.

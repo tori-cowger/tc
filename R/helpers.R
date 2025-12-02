@@ -1,7 +1,20 @@
 
 # Negate Function
 # Opposite of %in%
-`%ni%` <- purrr::negate(`%in%`) # For filtering list items not in
+#' Not In Operator
+#'
+#' @param x The values to be looked fo
+#' @param table The reference list to check whether items are in
+#'
+#' @returns A logical vector indicating if a match was found
+#' @export
+#'
+#' @examples
+#' 1 %ni% 1:10
+#' c(10,20) %in% 20:24
+`%ni%` <- function(x, table) {
+  !(x %in% table)
+}
 
 # Function that takes a PC copied file location (with forward slashes) and converts to R readable path
 #' Format copied PC file location for universal use
