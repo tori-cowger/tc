@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' copied_path()
 copied_path <- function(){
   out <- utils::readClipboard()
   out <- gsub("^\"|\"$", "", out)
