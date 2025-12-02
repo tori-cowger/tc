@@ -6,7 +6,8 @@
 #' @returns Nothing
 #' @export
 #'
-#' @examples none
+#' @examples
+#' ignore_unused_imports()
 ignore_unused_imports <- function() {
   purrr::negate()
 }

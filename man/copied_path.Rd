@@ -12,3 +12,6 @@ After copying to clipboard, returns string formatted with standard file path for
 \description{
 Format copied PC file location for universal use
 }
+\examples{
+copied_path()
+}
